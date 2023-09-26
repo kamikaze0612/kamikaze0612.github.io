@@ -4,17 +4,34 @@ const headerEl = document.querySelector('.header');
 const goToUpBtn = document.querySelector('.up-btn');
 const allLinks = document.querySelectorAll('a:link');
 const projectBoxEls = document.querySelectorAll('.project-box');
-const projectPopups = document.querySelectorAll('.project__popup');
-const bodyOverlay = document.querySelector('.overlay');
+const projectPopups = document.querySelectorAll('.popup');
 const popupCloseBtns = document.querySelectorAll('.popup__close-btn');
 
+/////////////////////////////////////////
+// FUNCTIONS
+const openPopup = function (targetEl) {
+  targetEl.classList.add('active');
+  const overlay = targetEl.closest('.popup__overlay');
+  overlay.classList.remove('hidden');
+  document.body.classList.add('popup-show');
+};
+
 const closePopup = function () {
+  const targetEl = Array.from(projectPopups).find((element) =>
+    element.classList.contains('active')
+  );
+
   projectPopups.forEach((popup) => {
     popup.classList.remove('active');
   });
-  bodyOverlay.classList.add('hidden');
+
+  const overlay = targetEl.closest('.popup__overlay');
+  overlay.classList.add('hidden');
+  document.body.classList.remove('popup-show');
 };
 
+/////////////////////////////////////////
+// EVENT LISTENERS
 goToUpBtn.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
@@ -57,8 +74,7 @@ projectBoxEls.forEach((project) => {
       (element) => element.dataset.project === projectName
     );
 
-    popup.classList.add('active');
-    bodyOverlay.classList.remove('hidden');
+    openPopup(popup);
   });
 });
 
@@ -66,4 +82,6 @@ popupCloseBtns.forEach((button) =>
   button.addEventListener('click', closePopup)
 );
 
-bodyOverlay.addEventListener('click', closePopup);
+projectPopups.forEach((popup) => {
+  popup.closest('.popup__overlay').addEventListener('click', closePopup);
+});

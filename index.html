@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Buyantogtokh Bekhbayar" />
+    <meta
+      name="description"
+      content="A personal portfolio page of Buyantogtokh Bekhbayar"
+    />
 
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
 
@@ -60,7 +65,12 @@
       <section class="about" id="about">
         <h2 class="heading--secondary">A little bit about me</h2>
         <div class="about__me">
-          <img src="./img/portrait.jpg" alt="me" class="about__img" />
+          <picture>
+            <source srcset="./img/portrait.webp" type="image/webp" />
+            <source srcset="./img/portrait.png" type="image/png" />
+            <img src="./img/portrait.png" alt="me" class="about__img" />
+          </picture>
+
           <p class="about__text">
             Hi there! My name is Buyantogtokh Bekhbayar and I'm a web developer
             with a passion. I've been learning web development for 2 years now,
@@ -187,11 +197,15 @@
         <h2 class="heading--secondary">Projects</h2>
         <div class="projects">
           <div class="project-box" data-name="omnifood">
-            <img
-              class="project__img"
-              src="./img/omnifood.png"
-              alt="Omnifood Project screenshot"
-            />
+            <picture>
+              <source srcset="./img/omnifood.webp" type="image/webp" />
+              <source srcset="./img/omnifood.png" type="image/png" />
+              <img
+                class="project__img"
+                src="./img/omnifood.png"
+                alt="Omnifood Project screenshot"
+              />
+            </picture>
 
             <div class="project__layer">
               <svg
@@ -207,11 +221,15 @@
             </div>
           </div>
           <div class="project-box" data-name="pomodoki">
-            <img
-              class="project__img"
-              src="./img/pomodoki.png"
-              alt="Pomodoki Project screenshot"
-            />
+            <picture>
+              <source srcset="./img/pomodoki.webp" type="image/webp" />
+              <source srcset="./img/pomodoki.png" type="image/png" />
+              <img
+                class="project__img"
+                src="./img/pomodoki.png"
+                alt="Pomodoki Project screenshot"
+              />
+            </picture>
 
             <div class="project__layer">
               <svg
@@ -227,11 +245,15 @@
             </div>
           </div>
           <div class="project-box" data-name="fiber">
-            <img
-              class="project__img"
-              src="./img/fiber.png"
-              alt="Pomodoki Project screenshot"
-            />
+            <picture>
+              <source srcset="./img/fiber.webp" type="image/webp" />
+              <source srcset="./img/fiber.png" type="image/png" />
+              <img
+                class="project__img"
+                src="./img/fiber.png"
+                alt="Fiber Project screenshot"
+              />
+            </picture>
 
             <div class="project__layer">
               <svg
@@ -320,73 +342,92 @@
       <p class="copyright">&copy; Buyantogtokh Bekhbayar 2023.</p>
     </footer>
 
-    <div class="project__popup" data-project="omnifood">
-      <h4 class="popup__heading">Project Omnifood</h4>
-      <img
-        class="popup__img"
-        src="./img/omnifood.png"
-        alt="Screenshot of Omnifood landing page"
-      />
-      <p class="popup__text">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
-        dis parturient montes, nascetur ridiculus mus.
-      </p>
-      <a
-        target="_blank"
-        href="https://kamikaze0612.github.io/omnifood/"
-        class="btn btn--popup"
-        >Visit site</a
-      >
-      <div class="popup__footer">
-        <button class="popup__close-btn">Close</button>
+    <div class="popup__overlay hidden">
+      <div class="popup" data-project="omnifood">
+        <h4 class="popup__heading">Project Omnifood</h4>
+        <picture>
+          <source srcset="./img/omnifood.webp" type="image/webp" />
+          <source srcset="./img/omnifood.png" type="image/png" />
+          <img
+            class="project__img"
+            src="./img/omnifood.png"
+            alt="Screenshot of Omnifood landing page"
+          />
+        </picture>
+        <p class="popup__text">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+          et magnis dis parturient montes, nascetur ridiculus mus.
+        </p>
+        <a
+          target="_blank"
+          href="https://kamikaze0612.github.io/omnifood/"
+          class="btn btn--popup"
+          >Visit site</a
+        >
+        <div class="popup__footer">
+          <button class="popup__close-btn">Close</button>
+        </div>
       </div>
     </div>
-    <div class="project__popup" data-project="pomodoki">
-      <h4 class="popup__heading">Project Pomodoki</h4>
-      <img
-        class="popup__img"
-        src="./img/pomodoki.png"
-        alt="Screenshot of Pomodoki app"
-      />
-      <p class="popup__text">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
-        dis parturient montes, nascetur ridiculus mus.
-      </p>
-      <a
-        target="_blank"
-        href="https://kamikaze0612.github.io/pomodoki/"
-        class="btn btn--popup"
-        >Visit site</a
-      >
-      <div class="popup__footer">
-        <button class="popup__close-btn">Close</button>
+
+    <div class="popup__overlay hidden">
+      <div class="popup" data-project="pomodoki">
+        <h4 class="popup__heading">Project Pomodoki</h4>
+        <picture>
+          <source srcset="./img/pomodoki.webp" type="image/webp" />
+          <source srcset="./img/pomodoki.png" type="image/png" />
+          <img
+            class="popup__img"
+            src="./img/pomodoki.png"
+            alt="Screenshot of Pomodoki app"
+          />
+        </picture>
+        <p class="popup__text">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+          et magnis dis parturient montes, nascetur ridiculus mus.
+        </p>
+        <a
+          target="_blank"
+          href="https://kamikaze0612.github.io/pomodoki/"
+          class="btn btn--popup"
+          >Visit site</a
+        >
+        <div class="popup__footer">
+          <button class="popup__close-btn">Close</button>
+        </div>
       </div>
     </div>
-    <div class="project__popup" data-project="fiber">
-      <h4 class="popup__heading">Project Fiber</h4>
-      <img
-        class="popup__img"
-        Close
-        src="./img/fiber.png"
-        alt="Screenshot of Fiber landing page"
-      />
-      <p class="popup__text">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
-        dis parturient montes, nascetur ridiculus mus.
-      </p>
-      <a
-        target="_blank"
-        href="https://kamikaze0612.github.io/fiber/"
-        class="btn btn--popup"
-        >Visit site</a
-      >
-      <div class="popup__footer">
-        <button class="popup__close-btn">Close</button>
+
+    <div class="popup__overlay hidden">
+      <div class="popup" data-project="fiber">
+        <h4 class="popup__heading">Project Fiber</h4>
+        <picture>
+          <source srcset="./img/fiber.webp" type="image/webp" />
+          <source srcset="./img/fiber.png" type="image/png" />
+          <img
+            class="popup__img"
+            src="./img/fiber.png"
+            alt="Screenshot of Fiber landing page"
+          />
+        </picture>
+
+        <p class="popup__text">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+          et magnis dis parturient montes, nascetur ridiculus mus.
+        </p>
+        <a
+          target="_blank"
+          href="https://kamikaze0612.github.io/fiber/"
+          class="btn btn--popup"
+          >Visit site</a
+        >
+        <div class="popup__footer">
+          <button class="popup__close-btn">Close</button>
+        </div>
       </div>
     </div>
-    <div class="overlay hidden"></div>
   </body>
 </html>
