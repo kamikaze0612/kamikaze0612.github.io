@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script defer src="./script.js"></script>
+
+    <title>Buyantogtokh</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__logo-box">
+        <a class="logo__link" href="#">
+          <img src="./img/logo.png" alt="Logo" class="header__logo" />
+          Buyantogtokh. B
+        </a>
+      </div>
+      <nav class="header__nav">
+        <ul class="list">
+          <li class="list__item">
+            <a href="#about" class="header__link">About me</a>
+          </li>
+          <li class="list__item">
+            <a href="#projects" class="header__link">Projects</a>
+          </li>
+          <li class="list__item">
+            <a href="#contact" class="header__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+      <section class="hero">
+        <h1 class="hero__heading">Hello, I'm Buyantogtokh.</h1>
+        <p class="hero__text">Front-end developer</p>
+      </section>
+
+      <section class="about" id="about">
+        <h2 class="heading--secondary">A little bit about me</h2>
+        <div class="about__me">
+          <img src="./img/portrait.jpg" alt="me" class="about__img" />
+          <p class="about__text">
+            Hi there! My name is Buyantogtokh Bekhbayar and I'm a web developer
+            with a passion. I've been learning web development for 2 years now,
+            and I'm always eager to learn more technologies in this fast paced
+            industry.
+          </p>
+        </div>
+        <div class="about__details">
+          <div class="about__hobbies">
+            <h4 class="subheading">Hobbies</h4>
+            <div class="about__hobby">
+              <svg
+                class="about__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M223.51,48h-191A16.51,16.51,0,0,0,16,64.49v127A16.51,16.51,0,0,0,32.49,208h191A16.51,16.51,0,0,0,240,191.51v-127A16.51,16.51,0,0,0,223.51,48ZM224,191.51a.49.49,0,0,1-.49.49h-191a.49.49,0,0,1-.49-.49v-127a.49.49,0,0,1,.49-.49h191a.49.49,0,0,1,.49.49ZM208,128a8,8,0,0,1-8,8H56a8,8,0,0,1,0-16H200A8,8,0,0,1,208,128Zm0-32a8,8,0,0,1-8,8H56a8,8,0,0,1,0-16H200A8,8,0,0,1,208,96ZM72,160a8,8,0,0,1-8,8H56a8,8,0,0,1,0-16h8A8,8,0,0,1,72,160Zm96,0a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,160Zm40,0a8,8,0,0,1-8,8h-8a8,8,0,0,1,0-16h8A8,8,0,0,1,208,160Z"
+                ></path>
+              </svg>
+              <span>Coding</span>
+            </div>
+            <div class="about__hobby">
+              <svg
+                class="about__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M245.66,42.34l-32-32a8,8,0,0,0-12.72,9.41L140.52,80.16C117.73,68.3,92.21,69.29,76.75,84.74a42.27,42.27,0,0,0-9.39,14.37A8.24,8.24,0,0,1,59.81,104c-14.59.49-27.26,5.72-36.65,15.11C11.08,131.22,6,148.6,8.74,168.07,11.4,186.7,21.07,205.15,36,220s33.34,24.56,52,27.22A71.13,71.13,0,0,0,98.1,248c15.32,0,28.83-5.23,38.76-15.16,9.39-9.39,14.62-22.06,15.11-36.65a8.24,8.24,0,0,1,4.92-7.55,42.22,42.22,0,0,0,14.37-9.39c15.45-15.46,16.44-41,4.58-63.77l60.41-60.42a8,8,0,0,0,9.41-12.72ZM200,68.68,187.32,56,212,31.31,224.69,44ZM160,167.93a26.12,26.12,0,0,1-8.95,5.83,24.24,24.24,0,0,0-15,21.89c-.36,10.46-4,19.41-10.43,25.88-8.44,8.43-21,11.95-35.36,9.89C75,229.25,59.73,221.19,47.27,208.73S26.75,181,24.58,165.81c-2-14.37,1.46-26.92,9.89-35.36C40.94,124,49.89,120.38,60.35,120h0a24.22,24.22,0,0,0,21.89-15,26.12,26.12,0,0,1,5.83-9c5.49-5.49,13-8.13,21.38-8.13a49.38,49.38,0,0,1,19.13,4.19L108.5,112.19a32,32,0,1,0,35.31,35.31l20.08-20.08C170.41,142.71,169.47,158.41,160,167.93Zm-10.4-61.48a72.9,72.9,0,0,1,5.93,6.75l-15.42,15.42a32.22,32.22,0,0,0-12.68-12.68l15.42-15.43A73,73,0,0,1,149.55,106.45ZM112,128a16,16,0,0,1,16,16h0a16,16,0,1,1-16-16Zm48.85-32.85a85.23,85.23,0,0,0-6.69-6L176,67.31,188.69,80l-21.83,21.82A86.94,86.94,0,0,0,160.86,95.14Zm-67.2,99.19a8,8,0,0,1-11.31,11.32l-32-32a8,8,0,0,1,11.32-11.31Z"
+                ></path>
+              </svg>
+              <span>Guitar</span>
+            </div>
+            <div class="about__hobby">
+              <svg
+                class="about__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M176,112H152a8,8,0,0,1,0-16h24a8,8,0,0,1,0,16ZM104,96H96V88a8,8,0,0,0-16,0v8H72a8,8,0,0,0,0,16h8v8a8,8,0,0,0,16,0v-8h8a8,8,0,0,0,0-16ZM241.48,200.65a36,36,0,0,1-54.94,4.81c-.12-.12-.24-.24-.35-.37L146.48,160h-37L69.81,205.09l-.35.37A36.08,36.08,0,0,1,44,216,36,36,0,0,1,8.56,173.75a.68.68,0,0,1,0-.14L24.93,89.52A59.88,59.88,0,0,1,83.89,40H172a60.08,60.08,0,0,1,59,49.25c0,.06,0,.12,0,.18l16.37,84.17a.68.68,0,0,1,0,.14A35.74,35.74,0,0,1,241.48,200.65ZM172,144a44,44,0,0,0,0-88H83.89A43.9,43.9,0,0,0,40.68,92.37l0,.13L24.3,176.59A20,20,0,0,0,58,194.3l41.92-47.59a8,8,0,0,1,6-2.71Zm59.7,32.59-8.74-45A60,60,0,0,1,172,160h-4.2L198,194.31a20.09,20.09,0,0,0,17.46,5.39,20,20,0,0,0,16.23-23.11Z"
+                ></path>
+              </svg>
+              <span>Video Games</span>
+            </div>
+            <div class="about__hobby">
+              <svg
+                class="about__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM60,72.17A87.2,87.2,0,0,1,79.63,120H40.37A87.54,87.54,0,0,1,60,72.17ZM136,120V40.37a87.59,87.59,0,0,1,48.68,20.37A103.06,103.06,0,0,0,160.3,120Zm-16,0H95.7A103.06,103.06,0,0,0,71.32,60.74,87.59,87.59,0,0,1,120,40.37ZM79.63,136A87.2,87.2,0,0,1,60,183.83,87.54,87.54,0,0,1,40.37,136Zm16.07,0H120v79.63a87.59,87.59,0,0,1-48.68-20.37A103.09,103.09,0,0,0,95.7,136Zm40.3,0h24.3a103.09,103.09,0,0,0,24.38,59.26A87.59,87.59,0,0,1,136,215.63Zm40.37,0h39.26A87.54,87.54,0,0,1,196,183.83,87.2,87.2,0,0,1,176.37,136Zm0-16A87.2,87.2,0,0,1,196,72.17,87.54,87.54,0,0,1,215.63,120Z"
+                ></path>
+              </svg>
+              <span>Basketball</span>
+            </div>
+            <div class="about__hobby">
+              <svg
+                class="about__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M231.65,194.55,198.46,36.75a16,16,0,0,0-19-12.39L132.65,34.42a16.08,16.08,0,0,0-12.3,19l33.19,157.8A16,16,0,0,0,169.16,224a16.25,16.25,0,0,0,3.38-.36l46.81-10.06A16.09,16.09,0,0,0,231.65,194.55ZM136,50.15c0-.06,0-.09,0-.09l46.8-10,3.33,15.87L139.33,66Zm6.62,31.47,46.82-10.05,3.34,15.9L146,97.53Zm6.64,31.57,46.82-10.06,13.3,63.24-46.82,10.06ZM216,197.94l-46.8,10-3.33-15.87L212.67,182,216,197.85C216,197.91,216,197.94,216,197.94ZM104,32H56A16,16,0,0,0,40,48V208a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V48A16,16,0,0,0,104,32ZM56,48h48V64H56Zm0,32h48v96H56Zm48,128H56V192h48v16Z"
+                ></path>
+              </svg>
+              <span>Books</span>
+            </div>
+          </div>
+          <div class="about__skills">
+            <h4 class="subheading">Skills</h4>
+            <div class="about__skill about__skill--1">
+              <svg class="about__skill-icon">
+                <use xlink:href="./img/icons/sprite.svg#icon-html5"></use>
+              </svg>
+            </div>
+            <div class="about__skill about__skill--2">
+              <svg class="about__skill-icon">
+                <use xlink:href="./img/icons/sprite.svg#icon-css3"></use>
+              </svg>
+            </div>
+            <div class="about__skill about__skill--3">
+              <svg class="about__skill-icon">
+                <use xlink:href="./img/icons/sprite.svg#icon-javascript"></use>
+              </svg>
+            </div>
+            <div class="about__skill about__skill--4">
+              <svg class="about__skill-icon">
+                <use xlink:href="./img/icons/sprite.svg#icon-sass"></use>
+              </svg>
+            </div>
+            <div class="about__skill about__skill--5">
+              <svg class="about__skill-icon">
+                <use xlink:href="./img/icons/sprite.svg#icon-react"></use>
+              </svg>
+            </div>
+            <div class="about__skill about__skill--6">
+              <svg class="about__skill-icon">
+                <use xlink:href="./img/icons/sprite.svg#icon-python"></use>
+              </svg>
+            </div>
+            <div class="about__skill about__skill--7">
+              <svg class="about__skill-icon">
+                <use xlink:href="./img/icons/sprite.svg#icon-java"></use>
+              </svg>
+            </div>
+            <div class="about__skill about__skill--8">
+              <svg class="about__skill-icon">
+                <use xlink:href="./img/icons/sprite.svg#icon-typescript"></use>
+              </svg>
+            </div>
+            <div class="about__skill about__skill--9">
+              <svg class="about__skill-icon">
+                <use xlink:href="./img/icons/sprite.svg#icon-node-dot-js"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project" id="projects">
+        <h2 class="heading--secondary">Projects</h2>
+        <div class="projects">
+          <div class="project-box" data-name="omnifood">
+            <img
+              class="project__img"
+              src="./img/omnifood.png"
+              alt="Omnifood Project screenshot"
+            />
+
+            <div class="project__layer">
+              <svg
+                class="project__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M152,112a8,8,0,0,1-8,8H120v24a8,8,0,0,1-16,0V120H80a8,8,0,0,1,0-16h24V80a8,8,0,0,1,16,0v24h24A8,8,0,0,1,152,112Zm77.66,117.66a8,8,0,0,1-11.32,0l-50.06-50.07a88.11,88.11,0,1,1,11.31-11.31l50.07,50.06A8,8,0,0,1,229.66,229.66ZM112,184a72,72,0,1,0-72-72A72.08,72.08,0,0,0,112,184Z"
+                ></path>
+              </svg>
+              <p class="project__name">Omnifood</p>
+            </div>
+          </div>
+          <div class="project-box" data-name="pomodoki">
+            <img
+              class="project__img"
+              src="./img/pomodoki.png"
+              alt="Pomodoki Project screenshot"
+            />
+
+            <div class="project__layer">
+              <svg
+                class="project__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M152,112a8,8,0,0,1-8,8H120v24a8,8,0,0,1-16,0V120H80a8,8,0,0,1,0-16h24V80a8,8,0,0,1,16,0v24h24A8,8,0,0,1,152,112Zm77.66,117.66a8,8,0,0,1-11.32,0l-50.06-50.07a88.11,88.11,0,1,1,11.31-11.31l50.07,50.06A8,8,0,0,1,229.66,229.66ZM112,184a72,72,0,1,0-72-72A72.08,72.08,0,0,0,112,184Z"
+                ></path>
+              </svg>
+              <p class="project__name">Pomodoki</p>
+            </div>
+          </div>
+          <div class="project-box" data-name="fiber">
+            <img
+              class="project__img"
+              src="./img/fiber.png"
+              alt="Pomodoki Project screenshot"
+            />
+
+            <div class="project__layer">
+              <svg
+                class="project__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M152,112a8,8,0,0,1-8,8H120v24a8,8,0,0,1-16,0V120H80a8,8,0,0,1,0-16h24V80a8,8,0,0,1,16,0v24h24A8,8,0,0,1,152,112Zm77.66,117.66a8,8,0,0,1-11.32,0l-50.06-50.07a88.11,88.11,0,1,1,11.31-11.31l50.07,50.06A8,8,0,0,1,229.66,229.66ZM112,184a72,72,0,1,0-72-72A72.08,72.08,0,0,0,112,184Z"
+                ></path>
+              </svg>
+              <p class="project__name">Fiber</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <svg
+          class="contact__icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 256 256"
+        >
+          <path
+            d="M227.32,28.68a16,16,0,0,0-15.66-4.08l-.15,0L19.57,82.84a16,16,0,0,0-2.42,29.84l85.62,40.55,40.55,85.62A15.86,15.86,0,0,0,157.74,248q.69,0,1.38-.06a15.88,15.88,0,0,0,14-11.51l58.2-191.94c0-.05,0-.1,0-.15A16,16,0,0,0,227.32,28.68ZM157.83,231.85l-.05.14L118.42,148.9l47.24-47.25a8,8,0,0,0-11.31-11.31L107.1,137.58,24,98.22l.14,0L216,40Z"
+          ></path>
+        </svg>
+        <p class="contact__text">Shoot me an email!</p>
+        <a class="btn" href="mailto: bekhebuyak@gmail.com">Send Email</a>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a
+            href="https://www.facebook.com/profile.php?id=100005116724021"
+            class="footer__link footer__link--1"
+            target="_blank"
+          >
+            <svg class="footer__icon">
+              <use xlink:href="./img/icons/sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a
+            href="https://www.instagram.com/buyadai/"
+            class="footer__link footer__link--2"
+            target="_blank"
+          >
+            <svg class="footer__icon">
+              <use xlink:href="./img/icons/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a
+            href="https://github.com/kamikaze0612"
+            class="footer__link footer__link--3"
+            target="_blank"
+          >
+            <svg class="footer__icon">
+              <use xlink:href="./img/icons/sprite.svg#icon-github"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a
+            href="https://codepen.io/kamikaze0612"
+            class="footer__link footer__link--4"
+            target="_blank"
+          >
+            <svg class="footer__icon">
+              <use xlink:href="./img/icons/sprite.svg#icon-codepen"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="up-btn">
+        <svg class="footer__icon">
+          <use xlink:href="./img/icons/sprite.svg#icon-rocket"></use>
+        </svg>
+      </div>
+      <p class="copyright">&copy; Buyantogtokh Bekhbayar 2023.</p>
+    </footer>
+
+    <div class="project__popup" data-project="omnifood">
+      <h4 class="popup__heading">Project Omnifood</h4>
+      <img
+        class="popup__img"
+        src="./img/omnifood.png"
+        alt="Screenshot of Omnifood landing page"
+      />
+      <p class="popup__text">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+        dis parturient montes, nascetur ridiculus mus.
+      </p>
+      <a
+        target="_blank"
+        href="https://kamikaze0612.github.io/omnifood/"
+        class="btn btn--popup"
+        >Visit site</a
+      >
+      <div class="popup__footer">
+        <button class="popup__close-btn">Close</button>
+      </div>
+    </div>
+    <div class="project__popup" data-project="pomodoki">
+      <h4 class="popup__heading">Project Pomodoki</h4>
+      <img
+        class="popup__img"
+        src="./img/pomodoki.png"
+        alt="Screenshot of Pomodoki app"
+      />
+      <p class="popup__text">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+        dis parturient montes, nascetur ridiculus mus.
+      </p>
+      <a
+        target="_blank"
+        href="https://kamikaze0612.github.io/pomodoki/"
+        class="btn btn--popup"
+        >Visit site</a
+      >
+      <div class="popup__footer">
+        <button class="popup__close-btn">Close</button>
+      </div>
+    </div>
+    <div class="project__popup" data-project="fiber">
+      <h4 class="popup__heading">Project Fiber</h4>
+      <img
+        class="popup__img"
+        Close
+        src="./img/fiber.png"
+        alt="Screenshot of Fiber landing page"
+      />
+      <p class="popup__text">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+        dis parturient montes, nascetur ridiculus mus.
+      </p>
+      <a
+        target="_blank"
+        href="https://kamikaze0612.github.io/fiber/"
+        class="btn btn--popup"
+        >Visit site</a
+      >
+      <div class="popup__footer">
+        <button class="popup__close-btn">Close</button>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>

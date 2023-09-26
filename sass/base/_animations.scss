@@ -1,0 +1,41 @@
+@keyframes appear-from-below {
+  0% {
+    transform: translateY(12rem);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.4;
+    transform: translateY(0);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateY(2rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes appear-from-left {
+  0% {
+    transform: translateX(-10rem);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.4;
+    transform: translateX(0);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,25 @@
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(rgba(#000, 0.4), rgba(#000, 0.4)),
+    url(../../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  justify-content: center;
+  align-items: center;
+
+  &__heading {
+    font-size: 7.4rem;
+    font-weight: 700;
+    color: #fff;
+    animation: appear-from-below 1s;
+  }
+
+  &__text {
+    font-size: 2.4rem;
+    color: #fff;
+    animation: appear-from-left 1s;
+  }
+}

@@ -1,0 +1,17 @@
+.contact {
+  padding: 6.4rem 0 9.6rem 0;
+  text-align: center;
+
+  &__icon {
+    width: 6rem;
+    height: 6rem;
+    fill: #000;
+  }
+
+  &__text {
+    margin-top: 3.2rem;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: $color-grey-dark--1;
+  }
+}
