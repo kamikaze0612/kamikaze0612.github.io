@@ -8,6 +8,10 @@
 
 html {
   font-size: 62.5%;
+
+  @include respond(laptop-big) {
+    font-size: 56.25%;
+  }
 }
 
 body {
@@ -17,6 +21,7 @@ body {
   position: relative;
   background-color: $color-grey-light--3;
   overflow-x: hidden;
+  overscroll-behavior: none;
 }
 
 body > * {

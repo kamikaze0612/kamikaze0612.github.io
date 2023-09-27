@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch:sass": "sass sass/main.scss css/style.css -w",
-    "dev-server": "live-server --browser=firefox",
+    "dev-server": "live-server",
     "start": "npm-run-all --parallel dev-server watch:sass",
     "compile:sass": "sass sass/main.scss css/style.comp.css",
     "prefix:sass": "postcss --use autoprefixer -b 'last 5 versions' css/style.comp.css -o css/style.prefix.css",

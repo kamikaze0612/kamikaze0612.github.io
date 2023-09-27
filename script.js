@@ -1,11 +1,11 @@
-'use strict';
-
 const headerEl = document.querySelector('.header');
 const goToUpBtn = document.querySelector('.up-btn');
 const allLinks = document.querySelectorAll('a:link');
 const projectBoxEls = document.querySelectorAll('.project-box');
 const projectPopups = document.querySelectorAll('.popup');
 const popupCloseBtns = document.querySelectorAll('.popup__close-btn');
+const mobileNavBtn = document.querySelector('.btn--mobile-nav');
+const headerNav = document.querySelector('.header__nav');
 
 /////////////////////////////////////////
 // FUNCTIONS
@@ -20,11 +20,11 @@ const closePopup = function () {
   const targetEl = Array.from(projectPopups).find((element) =>
     element.classList.contains('active')
   );
-
   projectPopups.forEach((popup) => {
     popup.classList.remove('active');
   });
 
+  if (!targetEl) return;
   const overlay = targetEl.closest('.popup__overlay');
   overlay.classList.add('hidden');
   document.body.classList.remove('popup-show');
@@ -84,4 +84,9 @@ popupCloseBtns.forEach((button) =>
 
 projectPopups.forEach((popup) => {
   popup.closest('.popup__overlay').addEventListener('click', closePopup);
+});
+
+mobileNavBtn.addEventListener('click', () => {
+  headerNav.classList.toggle('nav-open');
+  mobileNavBtn.classList.toggle('clicked');
 });

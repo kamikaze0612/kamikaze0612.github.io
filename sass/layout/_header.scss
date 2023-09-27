@@ -6,10 +6,15 @@
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0);
   padding: 0 3.2rem;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   transition: all 0.3s;
+
+  @include respond(tablet) {
+    // overflow-x: auto;
+    // overflow-y: auto;
+  }
 
   &__logo-box {
     .logo__link {
@@ -35,14 +40,48 @@
 
   &__nav {
     height: 100%;
+    transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+
+    @include respond(tablet) {
+      position: absolute;
+      height: 100vh;
+      width: 30vw;
+      background-color: $color-secondary;
+      top: 0;
+      right: 0;
+      transform: translateX(30vw);
+
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+    }
+
+    &.nav-open {
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
 
     .list {
       height: 100%;
       display: flex;
       list-style: none;
 
+      @include respond(tablet) {
+        flex-direction: column;
+        gap: 3.2rem;
+        align-items: flex-start;
+        height: 40%;
+        padding-top: 9.6rem;
+      }
+
       &__item {
         height: 100%;
+        @include respond(tablet) {
+          height: auto;
+          width: 100%;
+        }
       }
     }
   }
@@ -61,6 +100,10 @@
       display: flex;
       align-items: center;
       padding: 1.6rem;
+
+      @include respond(tablet) {
+        padding-left: 3.2rem;
+      }
     }
 
     &:hover,
