@@ -10,6 +10,10 @@
   @include respond(laptop-big) {
     font-size: 3rem;
   }
+
+  @include respond(tablet-small) {
+    font-size: 2.4rem;
+  }
 }
 
 .subheading {
@@ -20,5 +24,9 @@
 
   @include respond(laptop-big) {
     font-size: 2rem;
+  }
+
+  @include respond(tablet-small) {
+    font-size: 1.8rem;
   }
 }

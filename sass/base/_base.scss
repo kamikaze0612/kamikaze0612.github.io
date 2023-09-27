@@ -12,6 +12,10 @@ html {
   @include respond(laptop-big) {
     font-size: 56.25%;
   }
+
+  @include respond(tablet-small) {
+    font-size: 50%;
+  }
 }
 
 body {

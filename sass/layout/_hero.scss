@@ -10,6 +10,10 @@
   justify-content: center;
   align-items: center;
 
+  @include respond(phone) {
+    padding: 0 3.2rem;
+  }
+
   &__heading {
     font-size: 7.4rem;
     font-weight: 700;
@@ -22,6 +26,11 @@
 
     @include respond(laptop-small) {
       font-size: 5.2rem;
+    }
+
+    @include respond(tablet-small) {
+      text-align: center;
+      font-size: 4.4rem;
     }
   }
 
@@ -36,6 +45,11 @@
 
     @include respond(laptop-small) {
       font-size: 1.8rem;
+    }
+
+    @include respond(tablet-small) {
+      text-align: center;
+      font-size: 1.6rem;
     }
   }
 }

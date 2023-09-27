@@ -56,6 +56,10 @@
       visibility: hidden;
     }
 
+    @include respond(tablet-small) {
+      width: 40vw;
+    }
+
     &.nav-open {
       transform: translateX(0);
       opacity: 1;

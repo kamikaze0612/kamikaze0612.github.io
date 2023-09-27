@@ -2,10 +2,19 @@
   padding: 6.4rem 0 9.6rem 0;
   text-align: center;
 
+  @include respond(phone) {
+    padding: 4.8rem 0;
+  }
+
   &__icon {
     width: 6rem;
     height: 6rem;
     fill: #000;
+
+    @include respond(tablet-small) {
+      width: 4rem;
+      height: 4rem;
+    }
   }
 
   &__text {
@@ -16,6 +25,14 @@
 
     @include respond(laptop-big) {
       font-size: 2rem;
+    }
+
+    @include respond(tablet-small) {
+      font-size: 1.6rem;
+    }
+
+    @include respond(phone) {
+      margin-top: 1.6rem;
     }
   }
 }
