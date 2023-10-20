@@ -146,7 +146,7 @@
             </div>
           </div>
           <div class="about__skills">
-            <h4 class="subheading">Skills</h4>
+            <h4 class="subheading">Technologies I use</h4>
             <div class="about__skill about__skill--1">
               <svg class="about__skill-icon">
                 <use xlink:href="./img/icons/sprite.svg#icon-html5"></use>
@@ -245,6 +245,78 @@
                 ></path>
               </svg>
               <p class="project__name">Pomodoki</p>
+            </div>
+          </div>
+          <div class="project-box" data-name="tasker">
+            <picture>
+              <source srcset="./img/tasker.webp" type="image/webp" />
+              <source srcset="./img/tasker.png" type="image/png" />
+              <img
+                class="project__img"
+                src="./img/tasker.png"
+                alt="Project Tasker screenshot"
+              />
+            </picture>
+
+            <div class="project__layer">
+              <svg
+                class="project__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M152,112a8,8,0,0,1-8,8H120v24a8,8,0,0,1-16,0V120H80a8,8,0,0,1,0-16h24V80a8,8,0,0,1,16,0v24h24A8,8,0,0,1,152,112Zm77.66,117.66a8,8,0,0,1-11.32,0l-50.06-50.07a88.11,88.11,0,1,1,11.31-11.31l50.07,50.06A8,8,0,0,1,229.66,229.66ZM112,184a72,72,0,1,0-72-72A72.08,72.08,0,0,0,112,184Z"
+                ></path>
+              </svg>
+              <p class="project__name">Tasker</p>
+            </div>
+          </div>
+          <div class="project-box" data-name="globist">
+            <picture>
+              <source srcset="./img/globist.webp" type="image/webp" />
+              <source srcset="./img/globist.png" type="image/png" />
+              <img
+                class="project__img"
+                src="./img/globist.png"
+                alt="Project Globist screenshot"
+              />
+            </picture>
+
+            <div class="project__layer">
+              <svg
+                class="project__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M152,112a8,8,0,0,1-8,8H120v24a8,8,0,0,1-16,0V120H80a8,8,0,0,1,0-16h24V80a8,8,0,0,1,16,0v24h24A8,8,0,0,1,152,112Zm77.66,117.66a8,8,0,0,1-11.32,0l-50.06-50.07a88.11,88.11,0,1,1,11.31-11.31l50.07,50.06A8,8,0,0,1,229.66,229.66ZM112,184a72,72,0,1,0-72-72A72.08,72.08,0,0,0,112,184Z"
+                ></path>
+              </svg>
+              <p class="project__name">Globist</p>
+            </div>
+          </div>
+          <div class="project-box" data-name="soiaf">
+            <picture>
+              <source srcset="./img/soiaf.webp" type="image/webp" />
+              <source srcset="./img/soiaf.png" type="image/png" />
+              <img
+                class="project__img"
+                src="./img/soiaf.png"
+                alt=" Project Song of ice and fire screenshot"
+              />
+            </picture>
+
+            <div class="project__layer">
+              <svg
+                class="project__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M152,112a8,8,0,0,1-8,8H120v24a8,8,0,0,1-16,0V120H80a8,8,0,0,1,0-16h24V80a8,8,0,0,1,16,0v24h24A8,8,0,0,1,152,112Zm77.66,117.66a8,8,0,0,1-11.32,0l-50.06-50.07a88.11,88.11,0,1,1,11.31-11.31l50.07,50.06A8,8,0,0,1,229.66,229.66ZM112,184a72,72,0,1,0-72-72A72.08,72.08,0,0,0,112,184Z"
+                ></path>
+              </svg>
+              <p class="project__name">Song of Ice and Fire Wiki</p>
             </div>
           </div>
           <div class="project-box" data-name="fiber">
@@ -396,6 +468,93 @@
         <a
           target="_blank"
           href="https://kamikaze0612.github.io/pomodoki/"
+          class="btn btn--popup"
+          >Visit site</a
+        >
+        <div class="popup__footer">
+          <button class="popup__close-btn">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup__overlay hidden">
+      <div class="popup" data-project="tasker">
+        <h4 class="popup__heading">Tasker</h4>
+        <picture>
+          <source srcset="./img/tasker.webp" type="image/webp" />
+          <source srcset="./img/tasker.png" type="image/png" />
+          <img
+            class="popup__img"
+            src="./img/tasker.png"
+            alt="Screenshot of Tasker app"
+          />
+        </picture>
+        <p class="popup__text">
+          Tasker is simple task scheduling app that can make your everyday life
+          easy. In this app you can register all the tasks you need to
+          accomplish and keep track of them.
+        </p>
+        <a
+          target="_blank"
+          href="https://buyna-tasker.netlify.app/"
+          class="btn btn--popup"
+          >Visit site</a
+        >
+        <div class="popup__footer">
+          <button class="popup__close-btn">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup__overlay hidden">
+      <div class="popup" data-project="globist">
+        <h4 class="popup__heading">Globist</h4>
+        <picture>
+          <source srcset="./img/globist.webp" type="image/webp" />
+          <source srcset="./img/globist.png" type="image/png" />
+          <img
+            class="popup__img"
+            src="./img/globist.png"
+            alt="Screenshot of Globist app"
+          />
+        </picture>
+        <p class="popup__text">
+          Globist is the simple app that can get any country's information from
+          web API called REST Countries. It has dark and night mode, and you can
+          use it for any purpose you like.
+        </p>
+        <a
+          target="_blank"
+          href="https://buyna-globist.netlify.app/"
+          class="btn btn--popup"
+          >Visit site</a
+        >
+        <div class="popup__footer">
+          <button class="popup__close-btn">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup__overlay hidden">
+      <div class="popup" data-project="soiaf">
+        <h4 class="popup__heading">Song of Ice and Fire Wiki</h4>
+        <picture>
+          <source srcset="./img/soiaf.webp" type="image/webp" />
+          <source srcset="./img/soiaf.png" type="image/png" />
+          <img
+            class="popup__img"
+            src="./img/soiaf.png"
+            alt="Screenshot of Song of Ice and Fire app"
+          />
+        </picture>
+        <p class="popup__text">
+          As a die hard fan of Game of Thrones TV show, I created this simple
+          web page for anyone who shares my hobby. I hope you enjoy my version
+          of wiki page of Song of Ice and Fire. "Winter is Coming!"
+        </p>
+        <a
+          target="_blank"
+          href="https://kamikaze0612.github.io/song-of-ice-and-fire-wiki/"
           class="btn btn--popup"
           >Visit site</a
         >
