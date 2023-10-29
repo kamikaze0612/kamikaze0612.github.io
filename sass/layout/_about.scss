@@ -172,39 +172,59 @@
     }
 
     &--1::after {
-      content: 'HTML5';
+      content: "HTML5";
     }
 
     &--2::after {
-      content: 'CSS3';
+      content: "CSS3";
     }
 
     &--3::after {
-      content: 'JavaScript';
+      content: "JavaScript";
     }
 
     &--4::after {
-      content: 'SASS';
+      content: "SASS";
     }
 
     &--5::after {
-      content: 'React';
+      content: "React";
     }
 
     &--6::after {
-      content: 'Python';
+      content: "Python";
     }
 
     &--7::after {
-      content: 'Java';
+      content: "Bootstrap";
     }
 
     &--8::after {
-      content: 'TypeScript';
+      content: "React Router";
     }
 
     &--9::after {
-      content: 'Node.js';
+      content: "Redux";
+    }
+
+    &--10::after {
+      content: "Tailwind CSS";
+    }
+
+    &--11::after {
+      content: "Styled Components";
+    }
+
+    &--12::after {
+      content: "MongoDB";
+    }
+
+    &--13::after {
+      content: "TypeScript";
+    }
+
+    &--14::after {
+      content: "Node.js";
     }
   }
 

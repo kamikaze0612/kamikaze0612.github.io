@@ -61,6 +61,67 @@
     color: $color-grey-dark--2;
   }
 
+  &__tech-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    padding: 0 3.2rem;
+  }
+
+  &__tech {
+    font-size: 1.2rem;
+    color: $color-white;
+    font-weight: 700;
+    padding: 0.6rem 1.2rem;
+    border-radius: 100px;
+
+    &--css {
+      background-color: $color-css;
+    }
+    &--javascript {
+      background-color: $color-javascript;
+    }
+    &--html {
+      background-color: $color-html;
+    }
+    &--typescript {
+      background-color: $color-typescript;
+    }
+    &--styled-components {
+      background-color: $color-styled-components;
+    }
+    &--react {
+      background-color: $color-react;
+    }
+    &--react-router {
+      background-color: $color-react-router;
+    }
+    &--redux {
+      background-color: $color-redux;
+    }
+    &--tailwindcss {
+      background-color: $color-tailwindcss;
+    }
+    &--mongodb {
+      background-color: $color-mongodb;
+    }
+    &--node-js {
+      background-color: $color-node-js;
+    }
+    &--api {
+      background-color: $color-api;
+    }
+    &--python {
+      background-color: $color-python;
+    }
+    &--bootstrap {
+      background-color: $color-bootstrap;
+    }
+    &--sass {
+      background-color: $color-sass;
+    }
+  }
+
   &__footer {
     margin-top: 3.2rem;
     width: 100%;
