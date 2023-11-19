@@ -1,19 +1,41 @@
 .resume {
   padding: 9.6rem 0;
   position: relative;
+  z-index: 50;
+  text-align: center;
 
   &::before {
     content: "";
     height: 100%;
     width: 100vw;
-    background-image: url(../../img/background.jpeg);
+    background-image: url(../img/background.jpeg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    filter: blur(5px);
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 300;
+    z-index: -1;
+    filter: brightness(0.4);
+  }
+
+  &__btn {
+    &:visited,
+    &:link {
+      display: inline-block;
+      text-decoration: none;
+      color: $color-grey-light--3;
+      font-weight: 400;
+      font-size: 1.8rem;
+      border: 2px solid $color-white;
+      padding: 1.2rem 1.6rem;
+      transition: all 0.2s;
+    }
+
+    &:hover,
+    &:active {
+      padding: 1.2rem 2.4rem;
+      background-color: rgba($color: #fff, $alpha: 0.3);
+    }
   }
 }
