@@ -19,13 +19,30 @@ html {
 }
 
 body {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   box-sizing: border-box;
   color: $color-secondary;
   position: relative;
   background-color: $color-grey-light--3;
   overflow-x: hidden;
   overscroll-behavior: none;
+  z-index: 2;
+}
+
+.main {
+  position: relative;
+}
+
+.main-bg {
+  background-image: url("../../img/background.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 body > * {

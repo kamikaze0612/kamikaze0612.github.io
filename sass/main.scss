@@ -1,18 +1,19 @@
-@import './utils/variables';
-@import './utils/mixins';
-@import './utils/helpers';
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/helpers";
 
-@import './base/base';
-@import './base/typography';
-@import './base/animations';
+@import "./base/base";
+@import "./base/typography";
+@import "./base/animations";
 
-@import './components/contact';
-@import './components/project';
-@import './components/btn';
-@import './components/popup';
+@import "./components/contact";
+@import "./components/project";
+@import "./components/btn";
+@import "./components/popup";
+@import "./components/resume";
 
-@import './layout/about';
-@import './layout/experience';
-@import './layout/hero';
-@import './layout/header';
-@import './layout/footer';
+@import "./layout/about";
+@import "./layout/experience";
+@import "./layout/hero";
+@import "./layout/header";
+@import "./layout/footer";

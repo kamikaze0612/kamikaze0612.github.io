@@ -1,11 +1,17 @@
 .about {
-  max-width: 100rem;
-  margin: 0 auto;
-  padding: 9.6rem 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 3.2rem;
-  column-gap: 8rem;
+  position: relative;
+  z-index: 90;
+  background-color: $color-grey-light--3;
+
+  .container {
+    max-width: 100rem;
+    margin: 0 auto;
+    display: grid;
+    padding: 9.6rem 0;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 3.2rem;
+    column-gap: 8rem;
+  }
 
   @include respond(laptop-small) {
     display: flex;
