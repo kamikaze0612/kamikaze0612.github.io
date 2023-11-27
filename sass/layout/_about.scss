@@ -11,6 +11,13 @@
     grid-template-columns: repeat(2, 1fr);
     row-gap: 3.2rem;
     column-gap: 8rem;
+
+    @include respond(tablet) {
+      display: flex;
+      flex-direction: column;
+      gap: 3.2rem;
+      padding: 6.4rem 0;
+    }
   }
 
   @include respond(laptop-small) {
@@ -74,10 +81,6 @@
     }
 
     @include respond(tablet-small) {
-      width: 60vw;
-    }
-
-    @include respond(phone) {
       width: 100%;
     }
   }
