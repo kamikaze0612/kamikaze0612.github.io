@@ -33,6 +33,10 @@ body {
   position: relative;
 }
 
+.main > * {
+  scroll-margin: 7rem;
+}
+
 .main-bg {
   background-image: url("../../img/background.jpeg");
   background-size: cover;
