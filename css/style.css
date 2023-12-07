@@ -1,9 +1,11 @@
 .text--bold {
   font-weight: 700;
 }
+
 .mg-bottom-lg {
   margin-bottom: 1.6rem;
 }
+
 *,
 *::before,
 *::after {
@@ -11,6 +13,7 @@
   margin: 0;
   box-sizing: inherit;
 }
+
 html {
   font-size: 62.5%;
 }
@@ -24,6 +27,7 @@ html {
     font-size: 50%;
   }
 }
+
 body {
   font-family: "Manrope", sans-serif;
   box-sizing: border-box;
@@ -34,14 +38,17 @@ body {
   overscroll-behavior: none;
   z-index: 2;
 }
+
 .main {
   position: relative;
 }
+
 .main > * {
   scroll-margin: 7rem;
 }
+
 .main-bg {
-  background-image: url("../img/background.jpeg");
+  background-image: url("../../img/background.jpeg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -51,12 +58,15 @@ body {
   left: 0;
   z-index: -1;
 }
+
 body > * {
   width: 100vw;
 }
+
 body.popup-show {
   overflow: hidden;
 }
+
 .heading--secondary {
   font-size: 3.6rem;
   font-weight: 400;
@@ -76,9 +86,11 @@ body.popup-show {
     font-size: 2.4rem;
   }
 }
+
 .text--white {
   color: #fff;
 }
+
 .subheading {
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -95,10 +107,12 @@ body.popup-show {
     font-size: 1.8rem;
   }
 }
+
 .heading--quaternary {
   font-size: 2rem;
   color: #333;
 }
+
 @keyframes appear-from-below {
   0% {
     transform: translateY(12rem);
@@ -175,6 +189,7 @@ body.popup-show {
     margin-top: 1.6rem;
   }
 }
+
 .project {
   padding: 8rem 4.8rem;
   background-color: #fff;
@@ -186,7 +201,6 @@ body.popup-show {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   row-gap: 3.2rem;
-  -moz-column-gap: 4rem;
   column-gap: 4rem;
   margin-top: 4.8rem;
 }
@@ -215,7 +229,6 @@ body.popup-show {
 .project__img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
   object-fit: cover;
 }
 .project__name {
@@ -257,8 +270,8 @@ body.popup-show {
 .project-box:hover .project__layer {
   opacity: 1;
 }
-.btn:link,
-.btn:visited {
+
+.btn:link, .btn:visited {
   font-size: 1.6rem;
   color: #333;
   display: inline-block;
@@ -271,16 +284,13 @@ body.popup-show {
   transition: all 0.2s;
   text-transform: uppercase;
 }
-.btn:hover,
-.btn:active {
+.btn:hover, .btn:active {
   background-color: #faf9f9;
 }
-.btn--popup:link,
-.btn--popup:visited {
+.btn--popup:link, .btn--popup:visited {
   background-color: #fff;
 }
-.btn--popup:hover,
-.btn--popup:active {
+.btn--popup:hover, .btn--popup:active {
   background-color: #f0eeee;
 }
 .btn--mobile-nav {
@@ -308,8 +318,7 @@ body.popup-show {
   z-index: 3000;
   transition: all 0.4s;
 }
-.btn--mobile-nav::before,
-.btn--mobile-nav::after {
+.btn--mobile-nav::before, .btn--mobile-nav::after {
   display: block;
   content: "";
   width: 100%;
@@ -338,10 +347,10 @@ body.popup-show {
 .btn--mobile-nav.clicked .btn-content {
   opacity: 0;
 }
-.btn--mobile-nav:hover,
-.btn--mobile-nav:active {
+.btn--mobile-nav:hover, .btn--mobile-nav:active {
   background-color: transparent;
 }
+
 .popup {
   z-index: 2001;
   max-width: 56rem;
@@ -478,6 +487,7 @@ body.popup-show {
   width: 2.4rem;
   height: 2.4rem;
 }
+
 .resume {
   padding: 9.6rem 0;
   position: relative;
@@ -498,8 +508,7 @@ body.popup-show {
   z-index: -1;
   filter: brightness(0.4);
 }
-.resume__btn:visited,
-.resume__btn:link {
+.resume__btn:visited, .resume__btn:link {
   display: inline-block;
   text-decoration: none;
   color: #f0eeee;
@@ -509,11 +518,11 @@ body.popup-show {
   padding: 1.2rem 1.6rem;
   transition: all 0.2s;
 }
-.resume__btn:hover,
-.resume__btn:active {
+.resume__btn:hover, .resume__btn:active {
   padding: 1.2rem 2.4rem;
   background-color: rgba(255, 255, 255, 0.3);
 }
+
 .about {
   position: relative;
   z-index: 90;
@@ -526,7 +535,6 @@ body.popup-show {
   padding: 9.6rem 0;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 3.2rem;
-  -moz-column-gap: 8rem;
   column-gap: 8rem;
 }
 @media only screen and (max-width: 48em) {
@@ -560,7 +568,6 @@ body.popup-show {
 .about__img {
   width: 20rem;
   height: 20rem;
-  -o-object-fit: cover;
   object-fit: cover;
   border-radius: 50%;
   border: 5px solid #fff;
@@ -580,7 +587,6 @@ body.popup-show {
   line-height: 1.6;
   color: #777;
   text-align: center;
-  -webkit-hyphens: auto;
   hyphens: auto;
   margin: 0 auto 6.4rem auto;
   grid-column: 1/2;
@@ -592,7 +598,7 @@ body.popup-show {
   }
 }
 .about__details {
-  grid-row: 2 / span 2;
+  grid-row: 2/span 2;
   grid-column: 2/3;
 }
 @media only screen and (max-width: 64em) {
@@ -650,7 +656,6 @@ body.popup-show {
   grid-template-columns: repeat(4, max-content);
   justify-items: center;
   row-gap: 4.8rem;
-  -moz-column-gap: 1.6rem;
   column-gap: 1.6rem;
   justify-items: start;
   justify-content: space-between;
@@ -685,7 +690,6 @@ body.popup-show {
   transition: all 0.2s;
 }
 .about__skill::after {
-  width: -moz-max-content;
   width: max-content;
   position: absolute;
   top: 110%;
@@ -746,10 +750,10 @@ body.popup-show {
   opacity: 1;
   transform: translate(-50%, 0);
 }
+
 .hero {
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../img/hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/hero.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -806,6 +810,7 @@ body.popup-show {
     font-size: 1.6rem;
   }
 }
+
 .header {
   height: 7rem;
   width: 100vw;
@@ -820,8 +825,7 @@ body.popup-show {
   left: 0;
   transition: all 0.3s;
 }
-.header__logo-box .logo__link:link,
-.header__logo-box .logo__link:visited {
+.header__logo-box .logo__link:link, .header__logo-box .logo__link:visited {
   font-size: 1.6rem;
   text-decoration: none;
   display: flex;
@@ -888,8 +892,7 @@ body.popup-show {
     width: 100%;
   }
 }
-.header__link:link,
-.header__link:visited {
+.header__link:link, .header__link:visited {
   text-decoration: none;
   color: #fff;
   font-size: 1.4rem;
@@ -903,30 +906,29 @@ body.popup-show {
   padding: 1.6rem;
 }
 @media only screen and (max-width: 48em) {
-  .header__link:link,
-  .header__link:visited {
+  .header__link:link, .header__link:visited {
     padding-left: 3.2rem;
   }
 }
-.header__link:hover,
-.header__link:active {
+.header__link:hover, .header__link:active {
   color: #212529;
 }
+
 .sticky-nav > .header {
   height: 6rem;
   background-color: rgba(0, 0, 0, 0.9);
-  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
 }
-.sticky-nav .header__link:hover,
-.sticky-nav .header__link:active {
+
+.sticky-nav .header__link:hover, .sticky-nav .header__link:active {
   color: #212529;
   background-color: #faf9f9;
 }
+
 .footer {
   padding: 6rem 0 3rem 0;
   background-color: #212529;
@@ -939,42 +941,33 @@ body.popup-show {
   list-style: none;
   gap: 4px;
 }
-.footer__link:link,
-.footer__link:visited {
+.footer__link:link, .footer__link:visited {
   display: block;
   padding: 1.2rem;
   background-color: #333;
 }
-.footer__link--1:hover,
-.footer__link--1:active {
+.footer__link--1:hover, .footer__link--1:active {
   background-color: #1c7ed6;
 }
-.footer__link--2:hover,
-.footer__link--2:active {
+.footer__link--2:hover, .footer__link--2:active {
   background-image: linear-gradient(to right bottom, #f783ac, #da77f2);
 }
-.footer__link--3:hover,
-.footer__link--3:active {
+.footer__link--3:hover, .footer__link--3:active {
   background-color: #4c6ef5;
 }
-.footer__link--4:hover,
-.footer__link--4:active {
+.footer__link--4:hover, .footer__link--4:active {
   background-color: #f0eeee;
 }
-.footer__link--1:hover .footer__icon,
-.footer__link--1:active .footer__icon {
+.footer__link--1:hover .footer__icon, .footer__link--1:active .footer__icon {
   fill: #fff;
 }
-.footer__link--2:hover .footer__icon,
-.footer__link--2:active .footer__icon {
+.footer__link--2:hover .footer__icon, .footer__link--2:active .footer__icon {
   fill: #fff;
 }
-.footer__link--3:hover .footer__icon,
-.footer__link--3:active .footer__icon {
+.footer__link--3:hover .footer__icon, .footer__link--3:active .footer__icon {
   fill: #fff;
 }
-.footer__link--4:hover .footer__icon,
-.footer__link--4:active .footer__icon {
+.footer__link--4:hover .footer__icon, .footer__link--4:active .footer__icon {
   fill: #212529;
 }
 .footer__icon {
@@ -997,7 +990,6 @@ body.popup-show {
   content: "Shoot me up!";
   color: #ccc;
   position: absolute;
-  width: -moz-max-content;
   width: max-content;
   top: 110%;
   left: 50%;
@@ -1014,3 +1006,5 @@ body.popup-show {
   font-size: 1.4rem;
   color: #999;
 }
+
+/*# sourceMappingURL=style.css.map */

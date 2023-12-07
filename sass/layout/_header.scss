@@ -12,11 +12,6 @@
   left: 0;
   transition: all 0.3s;
 
-  @include respond(tablet) {
-    // overflow-x: auto;
-    // overflow-y: auto;
-  }
-
   &__logo-box {
     .logo__link {
       &:link,
