@@ -247,6 +247,30 @@
       <section class="project" id="projects">
         <h2 class="heading--secondary">Projects</h2>
         <div class="projects">
+          <div class="project-box" data-name="stay-easy">
+            <picture>
+              <source srcset="./img/stay-easy.webp" type="image/webp" />
+              <source srcset="./img/stay-easy.png" type="image/png" />
+              <img
+                class="project__img"
+                src="./img/stay-easy.png"
+                alt="Stay easy Project screenshot"
+              />
+            </picture>
+
+            <div class="project__layer">
+              <svg
+                class="project__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  d="M152,112a8,8,0,0,1-8,8H120v24a8,8,0,0,1-16,0V120H80a8,8,0,0,1,0-16h24V80a8,8,0,0,1,16,0v24h24A8,8,0,0,1,152,112Zm77.66,117.66a8,8,0,0,1-11.32,0l-50.06-50.07a88.11,88.11,0,1,1,11.31-11.31l50.07,50.06A8,8,0,0,1,229.66,229.66ZM112,184a72,72,0,1,0-72-72A72.08,72.08,0,0,0,112,184Z"
+                ></path>
+              </svg>
+              <p class="project__name">Stay Easy</p>
+            </div>
+          </div>
           <div class="project-box" data-name="pizzadom">
             <picture>
               <source srcset="./img/pizzadom.webp" type="image/webp" />
@@ -514,6 +538,49 @@
         &copy; Buyantogtokh Bekhbayar 2023. All rights reserved
       </p>
     </footer>
+
+    <!-- STAY EASY POPUP -->
+    <div class="popup__overlay hidden">
+      <div class="popup" data-project="stay-easy">
+        <h4 class="popup__heading">Stay easy</h4>
+        <picture>
+          <source srcset="./img/stay-easy.webp" type="image/webp" />
+          <source srcset="./img/stay-easy.png" type="image/png" />
+          <img
+            class="project__img"
+            src="./img/stay-easy.png"
+            alt="Screenshot of Stay easy app"
+          />
+        </picture>
+        <p class="popup__text">
+          Stay Easy is hotel management application for hotel staffs. By using
+          this application hotel staffs can read, edit, check-in, check-out
+          bookings, add new user accounts for new staff members, edit, create
+          rooms for hotel.
+        </p>
+        <h4 class="heading--quaternary mg-bottom-lg">Technologies used</h4>
+        <div class="popup__tech-box">
+          <span class="popup__tech popup__tech--styled-components"
+            >Styled Components</span
+          >
+          <span class="popup__tech popup__tech--react">React</span>
+          <span class="popup__tech popup__tech--react-router"
+            >React Router</span
+          >
+          <span class="popup__tech popup__tech--html">HTML</span>
+          <span class="popup__tech popup__tech--typescript">TypeScript</span>
+        </div>
+        <a
+          target="_blank"
+          href="https://stay-easy-hotel.netlify.app/"
+          class="btn btn--popup"
+          >Visit site</a
+        >
+        <div class="popup__footer">
+          <button class="popup__close-btn">Close</button>
+        </div>
+      </div>
+    </div>
 
     <!-- PIZZADOM POPUP -->
     <div class="popup__overlay hidden">
