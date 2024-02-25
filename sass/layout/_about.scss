@@ -201,7 +201,7 @@
     }
 
     &--6::after {
-      content: "Python";
+      content: "Next.js";
     }
 
     &--7::after {
@@ -234,6 +234,10 @@
 
     &--14::after {
       content: "Node.js";
+    }
+
+    &--15::after {
+      content: "Postman";
     }
   }
 

@@ -46,6 +46,13 @@
         background-color: $color-codepen;
       }
     }
+
+    &--5 {
+      &:hover,
+      &:active {
+        background-color: $color-linkedin;
+      }
+    }
   }
 
   &__link--1:hover &__icon,
@@ -68,10 +75,15 @@
     fill: $color-secondary;
   }
 
+  &__link--5:hover &__icon,
+  &__link--5:active &__icon {
+    fill: $color-white;
+  }
+
   &__icon {
     width: 2.4rem;
     height: 2.4rem;
-    fill: $color-grey-dark--3;
+    fill: $color-grey-light--4;
   }
 
   .up-btn {
